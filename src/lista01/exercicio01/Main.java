@@ -1,8 +1,5 @@
 package lista01.exercicio01;
 
-public class Main {
-    package lista01.exercicio01;
-
     public class Main {
         public static void main(String[] args) {
 //       constante no Java se identifica por FINAL
@@ -20,5 +17,3 @@ public class Main {
             return a - b;
         }
     }
-
-}
