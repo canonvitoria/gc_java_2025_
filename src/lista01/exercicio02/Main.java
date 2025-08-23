@@ -14,7 +14,7 @@ public class Main {
 
         String nome;
         int idade;
-        String possuiCadastro;
+        char possuiCadastro;
         int cpf;
         int telefone;
         int altura;
