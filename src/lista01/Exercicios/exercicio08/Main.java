@@ -1,3 +1,5 @@
+package lista01.Exercicios.exercicio08;
+
 import java.util.Scanner;
 
 // Crie um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá votar esse ano

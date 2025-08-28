@@ -1,4 +1,4 @@
-package lista01.exercicio03;
+package lista01.Exercicios.exercicio03;
 
 //Crie uma constante para armazenar um salário base.
 //Leia a quantidade de horas extras trabalhadas.

@@ -1,4 +1,6 @@
-import java.util.Scanner;]
+package lista01.Exercicios.exercicio07;
+
+import java.util.Scanner;
 
 // Crie um programa que leia 3 números, imprima o maior, o menor e a média aritmética.
 

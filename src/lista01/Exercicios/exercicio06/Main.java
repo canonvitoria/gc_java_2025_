@@ -1,4 +1,4 @@
-package lista01.exercicio06;
+package lista01.Exercicios.exercicio06;
 
 // Crie um programa que receba uma nota e atenda aos requisitos:
 //- Abaixo de 6 – Aparecer na tela "Reprovado!".

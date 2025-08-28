@@ -1,3 +1,5 @@
+package lista01.Desafios.desafio01;
+
 import java.util.Scanner;
 
 // Uma empresa de tecnologia oferece bônus anuais aos seus colaboradores com base em seu nível de desempenho, avaliado ao final do ano. Os níveis são classificados da seguinte forma:
@@ -6,7 +8,7 @@ import java.util.Scanner;
 // -Nível Diamante: 30%;
 // Faça um programa que leia o salário atual de um funcionário e seu nível, calcule e imprima seu novo salário.
 
-public class CalculoBonus {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -19,7 +21,7 @@ public class CalculoBonus {
         double bonus = 0.0;
         double novoSalario;
 
-        switch (niveltoLowerCase()) {
+        switch (nivel.toLowerCase()) {
             case "Ouro":
                 bonus = salario * 0.10;
                 break;

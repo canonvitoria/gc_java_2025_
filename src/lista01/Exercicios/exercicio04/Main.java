@@ -1,4 +1,4 @@
-package lista01.exercicio04;
+package lista01.Exercicios.exercicio04;
 import java.util.Scanner;
 
 // Crie um programa que receba uma temperatura em Celsius e converta para Fahrenheit.

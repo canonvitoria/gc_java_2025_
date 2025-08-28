@@ -1,4 +1,4 @@
-package lista01.exercicio02;
+package lista01.Exercicios.exercicio02;
 import java.util.Scanner;
 
 // Crie uma variável com seu respectivo tipo para todos os itens:
