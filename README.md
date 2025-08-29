@@ -1,13 +1,16 @@
 <!-- ![](https://github.com/SkiereszDiego/SkiereszDiego/blob/main/firstpixelart.gif) -->
 <p align="center">
-  <img src="https://github.com/SkiereszDiego/Java-Caldeira-Privado/blob/main/titulojava.png"/
+  <img src="assets/titulojava.png"/
 
 </p>
 
 ---
 ## Conquistas
-<img width="150" height="150" alt="Badg1" src="https://github.com/user-attachments/assets/d2263c62-3058-4487-a873-80dc0b04e6b3" />
-
+<p align="center">
+  <img width="150" height="150" alt="Aprovado" src="assets/bdg1.png" />
+  <img width="150" height="150" alt="Senhor do Tempo" src="assets/badg2-senhor_do_tempo.png" />
+      <img width="150" height="150" alt="Senhor do Tempo" src="assets/bdg4-Essa_e_facil.png" />
+</p>
 
 ---
 ## -  Conquistas
@@ -59,3 +62,24 @@ Qual minha bebida favorita? :heavy_check_mark:
 Resposta: Café
 ```
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Qual minha comida favorita escrita ao contrário?
+```
+Resposta:  
+```
+Qual o meu anime favorito?
+```
+Resposta: 
+```
+Qual meme que eu mandei o Giancarlo fez que está referenciando em um vídeo?
+```
+Resposta:
+```
+Qual o melhor alien do Ben10?
+```
+Resposta:
+```
+Qual o meu cantor favorito?
+```
+Resposta:
+```
