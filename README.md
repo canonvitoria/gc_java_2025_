@@ -65,7 +65,7 @@ Resposta: Café
 
 Qual minha comida favorita escrita ao contrário?
 ```
-Resposta:  sushi -> ihsus
+Resposta:  sushi -> ihsus ✔️
 ```
 Qual o meu anime favorito?
 ```
