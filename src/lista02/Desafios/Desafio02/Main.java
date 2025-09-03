@@ -13,39 +13,45 @@ public class Main {
     public static void calculadora() {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Digite o primeiro número: ");
-        int primeiroNum = sc.nextInt();
-
-        System.out.println("Digite o segundo número: ");
-        int segundoNum = sc.nextInt();
-
         System.out.println("Qual operação você deseja? " +
                 "1 - Soma " +
                 "2 - Subtração " +
                 "3 - Divisão " +
                 "4 - Multiplicação " +
                 "5 - Exponenciação " +
-                "6 - Raiz Quadrada ");
-        int operacao = sc.nextInt();
+                "6 - Raiz Quadrada " +
+                "n - Sair");
+        char operacao = sc.next().charAt(0);
+
+        if (operacao == 'n') {
+            System.out.println("Saindo...");
+            return;
+        }
+
+        System.out.println("Digite o primeiro número: ");
+        int primeiroNum = sc.nextInt();
+
+        System.out.println("Digite o segundo número: ");
+        int segundoNum = sc.nextInt();
 
         switch (operacao) {
-            case 1:
+            case '1':
                 int soma = primeiroNum + segundoNum;
                 System.out.println("A soma entre 2 números é: " + soma);
                 break;
-            case 2:
+            case '2':
                 int subtracao = primeiroNum - segundoNum;
                 System.out.println("A subtração entre 2 números é: " + subtracao);
                 break;
-            case 3:
+            case '3':
                 int divisao = primeiroNum / segundoNum;
                 System.out.println("A divisão entre 2 números é: " + divisao);
                 break;
-            case 4:
+            case '4':
                 int multiplicacao = primeiroNum * segundoNum;
                 System.out.println("A multiplicação entre 2 números é: " + multiplicacao);
                 break;
-            case 5:
+            case '5':
                 double exponenciacao = 1;
                 for (int i = primeiroNum; i <= segundoNum + 1; i++) {
                     exponenciacao = exponenciacao * primeiroNum;
@@ -54,7 +60,7 @@ public class Main {
                 // 2 5
                 // 2 2 2 2 2
                 break;
-            case 6:
+            case '6':
                 double inicio = 0;
                 double fim = primeiroNum;
                 double precisao = 0.00001; // Pra ter um resultado com 5 casas decimais
