@@ -18,6 +18,14 @@ package lista03.Desafios.desafio01;
     //• verificarHorario(): Exibe o horário atual.
     //• verificarInformacoes(): Exibe todas as informações da conta bancária, como nome, CPF, saldo, etc.
 
+// Implemente um método alterarEndereco(String novoEndereco) para atualizar o endereço do titular da conta.
+// Adicione uma taxa de manutenção mensal à conta bancária, que seja deduzida automaticamente do saldo no primeiro dia de cada mês.
+// Crie um método calcularJuros(double taxa) que calcule juros sobre o saldo da conta e os adicione mensalmente.
+// Implemente um método fecharConta() que encerre a conta, zerando o saldo e não permitindo mais operações.
 
-public class main {
+
+public class Main {
+    public static void main(String[] args) {
+
+    }
 }
