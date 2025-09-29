@@ -24,8 +24,11 @@ package lista03.Desafios.desafio01;
 // Implemente um método fecharConta() que encerre a conta, zerando o saldo e não permitindo mais operações.
 
 
+import lista03.Desafios.desafio01.classes.contaBancaria;
+
 public class Main {
     public static void main(String[] args) {
-
+        contaBancaria.ContaBancaria contaBancaria = new contaBancaria.ContaBancaria("Vitória", "1234567899", 123, "Bradesco", "Rua Tal", 1200, "13:00");
+        lista03.Desafios.desafio01.classes.contaBancaria.ContaBancaria.menu();
     }
 }
