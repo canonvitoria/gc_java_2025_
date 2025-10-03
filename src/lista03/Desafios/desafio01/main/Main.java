@@ -29,6 +29,7 @@ import lista03.Desafios.desafio01.model.contaBancaria;
 public class Main {
     public static void main(String[] args) {
         contaBancaria.ContaBancaria contaBancaria = new contaBancaria.ContaBancaria("Vitória", "1234567899", 123, "Bradesco", "Rua Tal", 1200, "13:00");
-        lista03.Desafios.desafio01.model.contaBancaria.ContaBancaria.menu();
+        lista03.Desafios.desafio01.model.contaBancaria.ContaBancaria.menu(contaBancaria);
+
     }
 }

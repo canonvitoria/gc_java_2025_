@@ -20,4 +20,12 @@ public class ContaService {
             System.out.println("Operação falhou: Saldo insuficiente.");
         }
     }
+
+    public void depositar(contaBancaria.ContaBancaria conta, double valorDeposito) {
+        double novoSaldo = conta.getSaldo() + valorDeposito;
+        conta.setSaldo(novoSaldo);
+        System.out.println("Deposito de R$" + valorDeposito + " realizado com sucesso.");
+        System.out.println("Novo saldo: R$" + conta.getSaldo());
+
+    }
 }
