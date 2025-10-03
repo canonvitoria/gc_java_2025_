@@ -1,4 +1,8 @@
-package lista03.Desafios.desafio01.classes;
+package lista03.Desafios.desafio01.model;
+
+import lista03.Desafios.desafio01.service.ContaService;
+
+import java.util.Scanner;
 
 public class contaBancaria {
     public static class ContaBancaria {
@@ -8,7 +12,7 @@ public class contaBancaria {
         private static int identificadorConta;
         private static String banco;
         private static String endereco;
-        private static float saldo;
+        private static double saldo;
         private static String horarioAtual;
 
         public ContaBancaria(String nome, String cpf, int identificadorConta, String banco, String endereço, float saldo, String horarioAtual) {
@@ -20,6 +24,15 @@ public class contaBancaria {
             ContaBancaria.endereco = endereco;
             ContaBancaria.saldo = saldo;
             ContaBancaria.horarioAtual = horarioAtual;
+        }
+
+        //get e set
+        public double getSaldo() {
+            return saldo;
+        }
+
+        public void setSaldo(double saldo) {
+            ContaBancaria.saldo = saldo;
         }
 
         public static void menu(){
@@ -37,22 +50,26 @@ public class contaBancaria {
             System.out.println("Horário Atual: " + horarioAtual);
 
             System.out.println("\n========================");
-            System.out.println("Digite a opção desejada:");
-            System.out.println("========================");
+            System.out.println("1 - Sacar");
+            System.out.println("Qual opção você deseja?");
 
-            // (talvez) fazer um switch com as opções, dentro de cada switch chama os métodos
-            // reorganizar os arquivos, ter uma pasta MODEL  e um a service
+            Scanner sc = new Scanner(System.in);
+            char opcao = sc.next().charAt(0);
+
+            switch (opcao) {
+                case '1':
+                    ContaService minhaConta = new ContaService();
+                    System.out.print("Digite o valor que deseja sacar: R$");
+                    double valorSaque = sc.nextDouble();
+                    ContaBancaria conta;
+                    minhaConta.sacar(conta, valorSaque); // Chama o método NO OBJETO e passa o valor
+                    break;
+                case '2':
+                    System.out.println("dha.,dh.a,");
+                default:
+                    break;
+            }
         }
-
-//        public static void saque() {
-//            // método saque
-//
-//            if (saldo == 0 || saldo < saque) {
-//                System.out.println(">> Saldo insuficiente.");
-//            } else {
-//                saldo =- saque;
-//            }
-//        }
 
     }
 }
