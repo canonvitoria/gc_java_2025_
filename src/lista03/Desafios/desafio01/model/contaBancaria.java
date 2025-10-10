@@ -1,6 +1,9 @@
 package lista03.Desafios.desafio01.model;
 
 import lista03.Desafios.desafio01.service.ContaService;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class contaBancaria {
@@ -34,13 +37,23 @@ public class contaBancaria {
             ContaBancaria.saldo = saldo;
         }
 
+        // alterar endereço
+        public void alterarEndereco(String novoEndereco) {
+            endereco = novoEndereco;
+        }
+
         // menu
         public static void menu(ContaBancaria contaParaOperacao){
             Scanner sc = new Scanner(System.in);
             char opcao;
 
+            DateTimeFormatter formatadorDeHora = DateTimeFormatter.ofPattern("HH:mm:ss");
+
             //do-while faz que o menu seja exibido pelo menos uma vez
             do {
+                LocalDateTime agora = LocalDateTime.now();
+                String horarioAtualizado = agora.format(formatadorDeHora);
+
                 System.out.println("\n===================");
                 System.out.println("Dados Bancários");
                 System.out.println("===================");
@@ -51,13 +64,15 @@ public class contaBancaria {
                 System.out.println("Nome do banco: " + banco);
                 System.out.println("Endereço do titular: " + endereco);
                 System.out.println("Saldo disponível na conta: R$" + String.format("%.2f", saldo));
-                System.out.println("Horário Atual: " + horarioAtual);
+                System.out.println("Horário Atual: " + horarioAtualizado);
 
                 System.out.println("\n======= MENU DE OPÇÕES =======");
                 System.out.println("1 - Sacar");
                 System.out.println("2 - Depositar");
-                System.out.println("3 - Realizar pix (Não implementado)");
-                System.out.println("4 - Sair");
+                System.out.println("3 - Realizar pix");
+                System.out.println("4 - Transferência");
+                System.out.println("5 - Alterar endereço");
+                System.out.println("6 - Sair");
                 System.out.print("Qual opção você deseja? ");
 
                 opcao = sc.next().charAt(0);
@@ -76,9 +91,20 @@ public class contaBancaria {
                         servico.depositar(contaParaOperacao, valorDeposito);
                         break;
                     case '3':
-                        System.out.println("Função ainda não implementada.");
+                        System.out.println("Digite o valor que deseja realizar no pix: R$");
+                        double valorPix = sc.nextDouble();
+                        servico.pix(contaParaOperacao, valorPix);
                         break;
                     case '4':
+                        System.out.println("Digite o valor que deseja realizar a tranferência: R$");
+                        double valorTrans = sc.nextDouble();
+                        servico.transferencia(contaParaOperacao, valorTrans);
+                    case '5':
+                        System.out.print("Digite o novo endereço: ");
+                        sc.nextLine();
+                        String novoEndereco = sc.nextLine();
+                        contaParaOperacao.alterarEndereco(novoEndereco);
+                    case '6':
                         System.out.println("Saindo do sistema... Até logo!");
                         break;
                     default:
@@ -89,5 +115,7 @@ public class contaBancaria {
 
             sc.close();
         }
+
+
     }
 }
