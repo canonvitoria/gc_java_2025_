@@ -84,5 +84,5 @@ Resposta:
 ```
 Qual o meu cantor favorito?
 ```
-Resposta:
+Resposta: Bring Me the Horizon
 ```
