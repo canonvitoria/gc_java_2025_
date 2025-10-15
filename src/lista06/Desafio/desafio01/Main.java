@@ -1,4 +1,4 @@
-package lista05.Desafio.desafio01;
+package lista06.Desafio.desafio01;
 
 import java.util.HashMap;
 import java.util.Map;

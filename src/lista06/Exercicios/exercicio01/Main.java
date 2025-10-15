@@ -1,4 +1,4 @@
-package lista05.Exercicios.exercicio01;
+package lista06.Exercicios.exercicio01;
 
 // Crie um enum chamado NivelAcesso com os valores: ADMIN, MODERADOR,USUARIO.
 // Crie um método que recebe um NivelAcesso como parâmetro e imprime qual tipo de ação que o usuário pode realizar.

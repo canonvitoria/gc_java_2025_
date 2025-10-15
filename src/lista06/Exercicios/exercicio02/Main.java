@@ -1,4 +1,4 @@
-package lista05.Exercicios.exercicio02;
+package lista06.Exercicios.exercicio02;
 
 import java.util.Arrays;
 import java.util.HashSet;
