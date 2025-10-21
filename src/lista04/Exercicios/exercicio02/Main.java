@@ -1,4 +1,4 @@
-package lista04.exercicio02;
+package lista04.Exercicios.exercicio02;
 
 // Crie uma interface chamada Pagamento que declare o método processarPagamento().
 // Em seguida, crie duas classes:

@@ -1,4 +1,4 @@
-package lista04.exercicio01;
+package lista04.Exercicios.exercicio01;
 
 // Crie uma classe base chamada Veiculo que tenha os atributos marca, modelo e ano. Inclua um método chamado informacoes() que exibe esses detalhes.
 // Em seguida, crie duas subclasses: Carro e Moto.
