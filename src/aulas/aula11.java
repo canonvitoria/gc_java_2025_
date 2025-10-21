@@ -2,7 +2,7 @@ package aulas;
 
 import java.util.*;
 
-public class Main {
+public class aula11 {
     public static void main(String[] args) {
         Collection<String>  lista2 = new ArrayList<>();
         Set<Integer> set = new HashSet<>();
@@ -19,7 +19,7 @@ public class Main {
         map.put(5, "Nicolas");
         System.out.println(map.get(5));
 
-        System.out.println(lista);
+        System.out.println(lista);  
 
         // Enuns
         // .ordinal - ordena
